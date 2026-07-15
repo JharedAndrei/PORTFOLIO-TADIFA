@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="desktop">
+
+    <div class="window">
+
+      <div class="title-bar">
+        <div class="title-bar-text">
+          <span class="title-icon">&#128187;</span> <span id="window-title">Loading...</span>
+        </div>
+        <div class="title-bar-controls">
+          <span class="tb-btn">_</span>
+          <span class="tb-btn">&#9633;</span>
+          <span class="tb-btn">X</span>
+        </div>
+      </div>
+
+      <div class="menu-bar">
+        <span>File</span>
+        <span>Edit</span>
+        <span>View</span>
+        <span>Help</span>
+      </div>
+
+      <header class="site-header">
+        <h1 id="dev-name">Loading Name...</h1>
+        <p class="tagline" id="dev-tagline">Loading Title...</p>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+
+        <section id="about" aria-labelledby="about-heading">
+          <h2 id="about-heading">About Me</h2>
+          <div class="panel">
+            <p id="about-text">Loading bio...</p>
+          </div>
+        </section>
+
+        <section id="portfolio" aria-labelledby="portfolio-heading">
+          <h2 id="portfolio-heading">Portfolio</h2>
+          <div class="panel grid" id="portfolio-grid">
+            </div>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-heading">
+          <h2 id="skills-heading">Skills</h2>
+          <div class="panel">
+            <ul class="skills-list" id="skills-list">
+              </ul>
+          </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Contact</h2>
+          <div class="panel">
+            <form id="contact-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="site-footer">
+        <p id="footer-copyright">&copy; 2026. Built with Love, Blood, Sweat &amp; Tears</p>
+      </footer>
+
+      <div class="status-bar">
+        <span>Ready</span>
+        <span>|</span>
+        <span>100%</span>
+      </div>
+
+    </div>
+
+    <div class="taskbar">
+      <div class="start-btn">
+        <span class="start-icon">&#10032;</span> Start
+      </div>
+      <div class="taskbar-item active" id="taskbar-item-title">Portfolio</div>
+      <div class="taskbar-clock" id="clock">--:-- --</div>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

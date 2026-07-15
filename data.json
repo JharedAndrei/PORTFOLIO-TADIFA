@@ -1,0 +1,26 @@
+{
+  "profile": {
+    "name": "Jhared Andrei",
+    "tagline": "Future Web Developer & IT Professional",
+    "about": "I am learning about Web Development and Software Development."
+  },
+  "projects": [
+    {
+      "title": "RPSc Game",
+      "description": "An interactive Rock-Paper-Scissors game featuring custom algorithmic opponent logic, local session score tracking, and a responsive arcade-inspired interface."
+    },
+    {
+      "title": "Weather Forecast",
+      "description": "A dynamic weather portal that queries external REST APIs to parse and display real-time meteorological data, regional conditions, and multi-day climate projections."
+    },
+    {
+      "title": "Chat Server",
+      "description": "A real-time, multi-user messaging system leveraging persistent WebSocket connections for instant communication channels and active user state updates."
+    }
+  ],
+  "skills": [
+    "HTML5 / CSS3 / Semantic Markup",
+    "JavaScript (ES6+) / Modern Frameworks",
+    "UI/UX Design Systems & Wireframing"
+  ]
+}
