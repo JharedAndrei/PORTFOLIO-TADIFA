@@ -1,0 +1,54 @@
+{
+  "profile": {
+    "name": "Jhared Andrei",
+    "handle": "jharedandrei_",
+    "age": 20,
+    "role": "Student / Builder",
+    "email": "jharedandrei.tadifa@lorma.edu",
+    "phone": "0956 709 7681",
+    "tagline": "I turn ideas into things that run.",
+    "bio": "20-year-old student who learns by shipping. I like taking a concept apart until I understand it, then rebuilding it as something that actually works — a game, a live data feed, a server that keeps a conversation alive in real time. Still early, still curious, still up too late debugging."
+  },
+  "skills": [
+    { "name": "JavaScript", "note": "core logic, DOM, async flows" },
+    { "name": "HTML & CSS", "note": "structure, layout, responsive UI" },
+    { "name": "REST APIs", "note": "fetching & parsing live data" },
+    { "name": "WebSockets", "note": "real-time, persistent connections" },
+    { "name": "Algorithms", "note": "game logic, decision systems" },
+    { "name": "Git", "note": "version control, workflow" },
+    { "name": "UI/UX Basics", "note": "usable, readable interfaces" }
+  ],
+  "projects": [
+    {
+      "id": "rpsc",
+      "index": "01",
+      "name": "RPSc Game",
+      "command": "./run rpsc --mode=arcade",
+      "description": "An interactive Rock-Paper-Scissors game featuring custom algorithmic opponent logic, local session score tracking, and a responsive arcade-inspired interface.",
+      "stack": ["JavaScript", "HTML", "CSS", "Local Storage"],
+      "status": "stable"
+    },
+    {
+      "id": "weather",
+      "index": "02",
+      "name": "Weather Forecast",
+      "command": "curl weather.forecast --live",
+      "description": "A dynamic weather portal that queries external REST APIs to parse and display real-time meteorological data, regional conditions, and multi-day climate projections.",
+      "stack": ["JavaScript", "REST API", "Fetch API", "CSS"],
+      "status": "stable"
+    },
+    {
+      "id": "chat",
+      "index": "03",
+      "name": "Chat Server",
+      "command": "node server.js --socket",
+      "description": "A real-time, multi-user messaging system leveraging persistent WebSocket connections for instant communication channels and active user state updates.",
+      "stack": ["Node.js", "WebSocket", "JavaScript"],
+      "status": "active"
+    }
+  ],
+  "footer": {
+    "year": "2026",
+    "line": "Built with Blood, Sweat, and Tears."
+  }
+}

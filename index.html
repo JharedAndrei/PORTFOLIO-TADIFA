@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jhared_andrei — portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="crt-overlay" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-path" href="#top">
+      <span class="path-root">~</span><span class="path-sep">/</span><span class="path-name">jhared_andrei</span><span class="cursor-blink">_</span>
+    </a>
+    <nav class="nav-links" aria-label="Section navigation">
+      <a href="#about"><span class="idx">01</span>about</a>
+      <a href="#skills"><span class="idx">02</span>skills</a>
+      <a href="#projects"><span class="idx">03</span>projects</a>
+      <a href="#contact"><span class="idx">04</span>contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="terminal-window hero-terminal">
+        <div class="terminal-chrome">
+          <span class="dot dot-red"></span><span class="dot dot-amber"></span><span class="dot dot-green"></span>
+          <span class="terminal-title">guest@jhared-andrei: ~</span>
+        </div>
+        <div class="terminal-body" id="bootLines">
+          <!-- filled by JS boot sequence -->
+        </div>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="hero-title-line">JHARED</span>
+        <span class="hero-title-line hero-title-accent">ANDREI</span>
+      </h1>
+      <p class="hero-tagline" id="heroTagline">loading tagline…</p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">view projects <span class="arrow">→</span></a>
+        <a href="#contact" class="btn btn-ghost">get in touch</a>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="section-label"><span class="idx">01</span><span class="label-line"></span>about</div>
+      <div class="about-grid">
+        <div class="terminal-window">
+          <div class="terminal-chrome">
+            <span class="dot dot-red"></span><span class="dot dot-amber"></span><span class="dot dot-green"></span>
+            <span class="terminal-title">whoami.sh</span>
+          </div>
+          <div class="terminal-body">
+            <p class="prompt-line"><span class="prompt">$</span> whoami</p>
+            <p class="output" id="aboutBio">reading profile…</p>
+            <p class="prompt-line"><span class="prompt">$</span> cat age.txt</p>
+            <p class="output" id="aboutAge">—</p>
+          </div>
+        </div>
+        <div class="about-portrait">
+          <div class="portrait-frame">
+            <img src="assets/profile.jfif" alt="Portrait of Jhared Andrei" id="profileImg" onerror="this.parentElement.classList.add('portrait-fallback')">
+            <div class="portrait-fallback-content" aria-hidden="true">
+              <span>JA</span>
+              <small>drop profile.jpg here</small>
+            </div>
+          </div>
+          <div class="portrait-tag">STATUS: <span class="status-dot"></span> building</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <div class="section-label"><span class="idx">02</span><span class="label-line"></span>skills</div>
+      <p class="section-intro"><span class="prompt">$</span> ls ./skills --long</p>
+      <ul class="skills-grid" id="skillsGrid">
+        <!-- filled by JS -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <div class="section-label"><span class="idx">03</span><span class="label-line"></span>projects</div>
+      <p class="section-intro"><span class="prompt">$</span> ls ./projects --status</p>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner">
+      <div class="section-label"><span class="idx">04</span><span class="label-line"></span>contact</div>
+      <div class="contact-block">
+        <p class="contact-lead">Have a project, a question, or just want to say hi?<br>Reach out — I read everything.</p>
+        <div class="contact-list" id="contactList">
+          <!-- filled by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p id="footerLine">© 2026 jhared_andrei. Built with Blood, Sweat, and Tears.</p>
+    <a href="#top" class="back-top">back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
